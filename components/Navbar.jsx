@@ -32,7 +32,7 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`${styles.xPaddings} py-8 fixed  w-full z-50 top-0 bg-gradient-to-r from-slate-800 via-gray-500 to-slate-900`} //relative
+      className={`${styles.xPaddings} py-8 fixed  w-full z-50 top-0 bg-primary-black`} //relative
     >
       <div className="absolute w-[50%] inset-0 gradient-01" />
       <div

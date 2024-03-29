@@ -7,7 +7,7 @@ import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 import Register from './Register';
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6 mt-36`}>{/*added mt */}
+  <section className={`${styles.yPaddings} sm:pl-16 pl-6 mt-32`}>{/*added mt */}
     <motion.div
       variants={staggerContainer}
       initial="hidden"

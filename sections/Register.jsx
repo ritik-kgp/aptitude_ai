@@ -4,14 +4,14 @@ const Register = () => {
   return (
     <>
       <div
-        className="flex justify-center items-center w-[140px] h-[140px] rounded-full bg-slate-900 p-[2px] cursor-pointer
+        className="flex justify-center items-center w-[140px] h-[140px] rounded-full bg-slate-900 p-[2px]
       animate-bounce"
         // onClick={handleGetStartedClick}
       >
         <div
           className= "flex justify-center items-center flex-col bg-gradient-to-r from-violet-500 via-blue-300 to-blue-600 w-[100%] h-[100%] rounded-full"
         >
-          <div className="flex justify-center items-center flex-row">
+          <div className="flex justify-center items-center flex-row cursor pointer">
             <p className="font-medium text-[18px] leading-[23.4px]">
               <span className="text-slate-900">Get</span>
             </p>

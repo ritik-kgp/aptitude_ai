@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-import styles from '../styles';
-import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
+import styles from "../styles";
+import { fadeIn, staggerContainer, zoomIn } from "../utils/motion";
 
 const Feedback = () => (
   <section className={`${styles.paddings}`}>
@@ -12,30 +12,97 @@ const Feedback = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-6`}
+      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8 justify-around`}
     >
       <motion.div
-        variants={fadeIn('right', 'tween', 0.2, 1)}
+        variants={fadeIn("right", "tween", 0.2, 1)}
         className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
       >
         <div className="feedback-gradient" />
         <div>
-          <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white">
-            Adidev
+          <div className="flex flex-col justify-center items-center">
+            <img
+              src="/kaustubhCTO.jpeg"
+              width={100}
+              height={100}
+              className="rounded-full"
+            />
+          <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white mt-8">
+            Kaustubh
           </h4>
           <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
-            Founder AptitudeAI
+            CTO AptitudeAI
           </p>
+          </div>
         </div>
 
         <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
-          “With the development of today's technology, AptitudeAI is very
-          useful for today's students, or can be called EDUcation 3.0. by using
+          “With the development of today's technology, AptitudeAI is very useful
+          for today's students, or can be called EDUcation 3.0. by using
           AptitudeAI you can use it as anything”
         </p>
       </motion.div>
 
       <motion.div
+        variants={fadeIn("right", "tween", 0.2, 1)}
+        className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
+      >
+        <div className="feedback-gradient" />
+        <div>
+          <div className="flex flex-col justify-center items-center">
+            <img
+              src="/AdidevCPO.jpeg"
+              width={100}
+              height={100}
+              className="rounded-full"
+            />
+          <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white mt-8">
+            Adidev
+          </h4>
+          <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
+            CPO AptitudeAI
+          </p>
+          </div>
+        </div>
+
+        <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
+          “With the development of today's technology, AptitudeAI is very useful
+          for today's students, or can be called EDUcation 3.0. by using
+          AptitudeAI you can use it as anything”
+        </p>
+      </motion.div>
+
+      <motion.div
+        variants={fadeIn("right", "tween", 0.2, 1)}
+        className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
+      >
+        <div className="feedback-gradient" />
+        <div>
+          <div className="flex flex-col justify-center items-center">
+            <img
+              src="/mohithCEO.jpeg"
+              width={100}
+              height={100}
+              className="rounded-full"
+            />
+          <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white mt-8">
+            Mohith
+          </h4>
+          <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
+            CEO AptitudeAI
+          </p>
+          </div>
+        </div>
+
+        <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
+          “With the development of today's technology, AptitudeAI is very useful
+          for today's students, or can be called EDUcation 3.0. by using
+          AptitudeAI you can use it as anything”
+        </p>
+      </motion.div>
+
+     
+      {/* <motion.div
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="relative flex-1 flex justify-center items-center"
       >
@@ -55,7 +122,7 @@ const Feedback = () => (
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   </section>
 );
